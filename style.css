@@ -1,0 +1,40 @@
+/* Center the button on the page */
+body, html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #222; /* Dark background for contrast */
+}
+
+.button-container {
+    text-align: center;
+}
+
+.glow-button {
+    background-color: black; /* Initial button color */
+    color: white;
+    border: 2px solid black;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s; /* Smooth transition */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Initial subtle shadow */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+    outline: none;
+}
+
+/* Hover effect */
+.glow-button:hover {
+    background-color: green; /* Change background to green */
+    color: black; /* Change text color to black */
+    border-color: green; /* Border color matches background */
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.8), /* Green glowing box shadow */
+                0 0 40px rgba(0, 255, 0, 0.6),
+                0 0 60px rgba(0, 255, 0, 0.4);
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.8); /* Green glowing text shadow */
+   transform: scale(1.1);
+}
